@@ -107,6 +107,9 @@ a {
   text-decoration: none;
   color: var(--blue);
 }
+a:hover {
+  color: var(--red);
+}
 
 .dinA4 {
   width: calc(794px - 114px);
