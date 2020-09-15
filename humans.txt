@@ -1,0 +1,9 @@
+/* TEAM */
+	Web designer: Sebastian Remm
+	From:Berlin, Germany
+
+/* SITE */
+	Last update: 2020/09/15
+	Language: Deutsch / English
+	Doctype: HTML5
+	IDE: RubyMine
