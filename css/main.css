@@ -94,6 +94,10 @@ textarea {
   --dinA4-background: rgb(239,239,239);
   --red: rgb(230,57,70);
   --blue: rgb(29,53,87);
+  --light-blue: rgb(69,123,157);
+  --green: rgb(75,175,40);
+  --black: rgb(18,18,18);
+  --light-black: rgba(18,18,18,0.2);
 }
 
 /* ------- */
@@ -111,40 +115,69 @@ a:hover {
   color: var(--red);
 }
 
+.left-border {
+  width: 57px;
+}
+
+.box-1 {
+  height: 58px;
+  width: 80%;
+  margin-top: 10px;
+  background-color: var(--blue);
+}
+
+.box-2 {
+  height: 42px;
+  width: 80%;
+  margin-top: 476px;
+  background-color: var(--red);
+}
+
+.box-3 {
+  height: 42px;
+  width: 80%;
+  margin-top: 161px;
+  background-color: var(--red);
+}
+
 .dinA4 {
-  width: calc(794px - 114px);
+  width: calc(794px - 57px);
   height: calc(1123px - 114px);
   margin: 8px auto;
-  padding: 57px;
+  padding: 57px 57px 57px 0;
   background-color: var(--dinA4-background);
   box-shadow: 1px 1px 2px rgb(18,18,18);
+  display: flex;
 }
 
 .content {
   height: 100%;
-  width: 100%;
-  /*border: 1px dotted black;*/
+  width: calc(794px - 114px);;
 }
 
 .top {
-  /*background-color: grey;*/
   height: auto;
   width: 100%;
-  padding-bottom: 16px;
   display: flex;
-  border-bottom: 1px solid var(--red);
 }
 
-.top-text {
-  width: calc(100% - 350px);
+.top-name-profession {
+  width: 100%;
 }
 
 .top-name {
   color: var(--blue);
+  margin: 0;
 }
 
 .top-profession {
   color: var(--red);
+  margin: 0;
+}
+
+.top-description {
+  color: var(--black);
+  margin-top: 12px;
 }
 
 .profile-pic {
@@ -152,9 +185,9 @@ a:hover {
   object-position: center;
   border-radius: 50%;
   box-shadow: 1px 1px 4px rgb(18,18,18);
-  margin-top: 35px;
-  width: 198px;
-  height: 198px;
+  margin: 0 40px;
+  width: 150px;
+  height: 150px;
   background: rgb(18,18,18);
   background: -moz-linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(235,235,235,1) 50%, rgba(235,235,235,0) 100%);
   background: -webkit-linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(235,235,235,1) 50%, rgba(235,235,235,0) 100%);
@@ -163,35 +196,198 @@ a:hover {
 }
 
 .top-links {
-  width: 185px;
+  width: 200px;
   flex-shrink: 0;
   list-style-type: none;
   margin: 0;
-  padding-left: 0;
-  padding-top: 132px;
+  padding: 7px 0 0 0;
 }
 
 .top-links-line {
   text-align: right;
+  color: var(--black);
+  margin: 4px;
+}
+
+.email-link {
+  margin-left: -8px;
 }
 
 .top-links-icons {
   width: 18px;
-  padding-top: 132px;
+  padding-top: 14px;
   padding-left: 4px;
   display: flex;
   flex-direction: column;
 }
 
-.devicon-icon {
-  padding-top: 2px;
-  padding-bottom: 6px;
+.map-pin-icon {
+  height: 18px;
+  width: 18px;
+  margin-left: -1px;
+  padding-bottom: 7px;
 }
 
 .mail-icon {
   height: 18px;
   width: 18px;
   margin-left: -1px;
+  padding-top: 2px;
+}
+
+.phone-icon {
+  height: 18px;
+  width: 18px;
+  margin-left: -1px;
+  padding-top: 6px;
+}
+
+.devicon-icon {
+  padding-top: 9px;
+  padding-bottom: 2px;
+}
+
+.top-text {
+
+}
+
+.top-border {
+  background-color: var(--red);
+  height: 1px;
+  width: 794px;
+  margin-left: -57px;
+}
+
+.expertise {
+  border-bottom: 1px solid var(--light-black);
+  padding-bottom: 16px;
+}
+
+.expertise-header {
+  color: var(--black);
+  margin: 10px 0;
+}
+
+.expertise-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expertise-left {
+  padding-right: 64px;
+  border-right: 1px solid var(--red);
+}
+
+.expertise-right {
+
+}
+
+.expertise-line {
+  display: flex;
+  margin: 0;
+}
+
+.expertise-icon {
+  font-size: 20px;
+  padding-top: 3px;
+}
+
+.expertise-name {
+  width: 100px;
+  margin: auto 4px;
+  color: var(--blue);
+}
+
+.expertise-bar {
+  width: 150px;
+  display: flex;
+}
+
+.expertise-bar-block {
+  height: 8px;
+  width: 20px;
+  border: 1px solid rgba(18,18,18,0.4);
+  box-shadow: 1px 1px 2px rgba(18,18,18,0.4);
+  border-radius: 4px;
+  margin: 8px 4px;
+}
+
+.expertise-bar-block-green-1 {
+  background: rgb(176,255,104);
+  background: -moz-linear-gradient(90deg, rgba(176,255,104,1) 0%, rgba(154,255,91,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(176,255,104,1) 0%, rgba(154,255,91,1) 100%);
+  background: linear-gradient(90deg, rgba(176,255,104,1) 0%, rgba(154,255,91,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0ff68",endColorstr="#9aff5b",GradientType=1);
+}
+
+.expertise-bar-block-green-2 {
+  background: rgb(132,255,78);
+  background: -moz-linear-gradient(90deg, rgba(132,255,78,1) 0%, rgba(110,255,55,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(132,255,78,1) 0%, rgba(110,255,55,1) 100%);
+  background: linear-gradient(90deg, rgba(132,255,78,1) 0%, rgba(110,255,55,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#84ff4e",endColorstr="#6eff37",GradientType=1);
+}
+
+.expertise-bar-block-green-3 {
+  background: rgb(88,255,42);
+  background: -moz-linear-gradient(90deg, rgba(88,255,42,1) 0%, rgba(66,255,29,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(88,255,42,1) 0%, rgba(66,255,29,1) 100%);
+  background: linear-gradient(90deg, rgba(88,255,42,1) 0%, rgba(66,255,29,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ff2a",endColorstr="#42ff1d",GradientType=1);
+}
+
+.expertise-bar-block-green-4 {
+  background: rgb(44,255,16);
+  background: -moz-linear-gradient(90deg, rgba(44,255,16,1) 0%, rgba(22,255,3,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(44,255,16,1) 0%, rgba(22,255,3,1) 100%);
+  background: linear-gradient(90deg, rgba(44,255,16,1) 0%, rgba(22,255,3,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2cff10",endColorstr="#16ff03",GradientType=1);
+}
+
+.expertise-bar-block-hidden {
+  border: 1px solid rgba(18,18,18,0.2);
+  box-shadow: 1px 1px 2px rgba(18,18,18,0.2);
+}
+
+.professional-experience-header {
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.professional-experience-header-small {
+  color: var(--black);
+  margin: 16px 0 0 0;
+}
+
+.professional-experience-date {
+  margin: 0;
+  color: var(--red);
+  font-style: italic;
+}
+
+.professional-experience-achievements {
+  margin: 4px 0 0 0;
+  color: var(--red);
+  font-style: italic;
+}
+
+.professional-experience-list {
+  margin: 0;
+  padding-left: 14px;
+  color: var(--red);
+  list-style: none;
+}
+
+.professional-experience-list-line::before {
+  content: "•";
+  color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+
+.professional-experience-list-line {
+  color: var(--black);
 }
 
 /* ==========================================================================
