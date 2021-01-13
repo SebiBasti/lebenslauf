@@ -92,6 +92,7 @@ textarea {
 :root {
   --body-background: rgb(229,229,229);
   --dinA4-background: rgb(239,239,239);
+  --white-transparent: rgba(239,239,239, 0.9);
   --red: rgb(230,57,70);
   --blue: rgb(29,53,87);
   --light-blue: rgb(69,123,157);
@@ -128,9 +129,9 @@ a:hover {
 }
 
 .box-2 {
-  height: 42px;
+  height: 68px;
   width: 80%;
-  margin-top: 484px;
+  margin-top: 440px;
   background-color: var(--red);
 }
 
@@ -172,11 +173,12 @@ a:hover {
 .dinA4 {
   width: calc(794px - 57px);
   height: calc(1123px - 114px);
-  margin: 8px auto;
+  margin: 4px auto;
   padding: 57px 57px 57px 0;
   background-color: var(--dinA4-background);
   box-shadow: 1px 1px 2px rgb(18,18,18);
   display: flex;
+  position: relative;
 }
 
 .content {
@@ -214,7 +216,7 @@ a:hover {
   flex-shrink: 0;
   border: 4px solid var(--red);
   border-radius: 50%;
-  margin: 0 38px;
+  margin: 0 12px 0 38px;
   width: 150px;
   height: 150px;
   background-image: url("../img/profile-pic-round_2.png");
@@ -223,7 +225,7 @@ a:hover {
 }
 
 .top-links {
-  width: 200px;
+  width: 225px;
   flex-shrink: 0;
   list-style-type: none;
   margin: 0;
@@ -285,10 +287,6 @@ a:hover {
   margin-left: -57px;
 }
 
-.expertise {
-  padding-bottom: 16px;
-}
-
 .expertise-header {
   color: var(--black);
   margin: 10px 0;
@@ -296,83 +294,27 @@ a:hover {
 
 .expertise-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.expertise-left {
-  padding-right: 64px;
-  border-right: 1px solid var(--red);
-}
-
-.expertise-right {
-
-}
-
-.expertise-line {
+.expertise-block {
+  padding: 6px 6px 8px 6px;
+  margin: 4px 12px 4px 0;
   display: flex;
-  margin: 0;
+  border-radius: 4px;
 }
 
 .expertise-icon {
+  font-size: 30px;
+  color: var(--red);
+}
+
+.expertise-block-text {
   font-size: 20px;
-  padding-top: 3px;
-}
-
-.expertise-name {
-  width: 100px;
-  margin: auto 4px;
-  color: var(--blue);
-}
-
-.expertise-bar {
-  width: 150px;
-  display: flex;
-}
-
-.expertise-bar-block {
-  height: 8px;
-  width: 20px;
-  border: 1px solid rgba(18,18,18,0.4);
-  box-shadow: 1px 1px 2px rgba(18,18,18,0.4);
-  border-radius: 4px;
-  margin: 8px 4px;
-}
-
-.expertise-bar-block-green-1 {
-  background: rgb(176,255,104);
-  background: -moz-linear-gradient(90deg, rgba(176,255,104,1) 0%, rgba(154,255,91,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(176,255,104,1) 0%, rgba(154,255,91,1) 100%);
-  background: linear-gradient(90deg, rgba(176,255,104,1) 0%, rgba(154,255,91,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0ff68",endColorstr="#9aff5b",GradientType=1);
-}
-
-.expertise-bar-block-green-2 {
-  background: rgb(132,255,78);
-  background: -moz-linear-gradient(90deg, rgba(132,255,78,1) 0%, rgba(110,255,55,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(132,255,78,1) 0%, rgba(110,255,55,1) 100%);
-  background: linear-gradient(90deg, rgba(132,255,78,1) 0%, rgba(110,255,55,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#84ff4e",endColorstr="#6eff37",GradientType=1);
-}
-
-.expertise-bar-block-green-3 {
-  background: rgb(88,255,42);
-  background: -moz-linear-gradient(90deg, rgba(88,255,42,1) 0%, rgba(66,255,29,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(88,255,42,1) 0%, rgba(66,255,29,1) 100%);
-  background: linear-gradient(90deg, rgba(88,255,42,1) 0%, rgba(66,255,29,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ff2a",endColorstr="#42ff1d",GradientType=1);
-}
-
-.expertise-bar-block-green-4 {
-  background: rgb(44,255,16);
-  background: -moz-linear-gradient(90deg, rgba(44,255,16,1) 0%, rgba(22,255,3,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(44,255,16,1) 0%, rgba(22,255,3,1) 100%);
-  background: linear-gradient(90deg, rgba(44,255,16,1) 0%, rgba(22,255,3,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2cff10",endColorstr="#16ff03",GradientType=1);
-}
-
-.expertise-bar-block-hidden {
-  border: 1px solid rgba(18,18,18,0.2);
-  box-shadow: 1px 1px 2px rgba(18,18,18,0.2);
+  margin: auto 0;
+  padding-left: 4px;
+  font-weight: bold;
+  color: var(--black);
 }
 
 .professional-experience-header {
@@ -380,9 +322,16 @@ a:hover {
   margin-bottom: 8px;
 }
 
-.professional-experience-header-small {
+.professional-experience-header-small-bold {
+  font-weight: bold;
   color: var(--black);
   margin: 16px 0 0 0;
+}
+
+.professional-experience-header-small {
+  font-weight: normal;
+  color: var(--black);
+  margin: 0;
 }
 
 .professional-experience-date {
@@ -477,16 +426,25 @@ a:hover {
 
 .languages-container {
   display: flex;
-  justify-content: space-between;
+}
+
+.language-block {
+  margin: 4px 32px 4px 0;
+  display: flex;
+  border-radius: 4px;
 }
 
 .language-icon {
-  margin: 2px 0;
+  height: 40px;
+  margin: 0;
 }
 
-.german {
-  padding-right: 64px;
-  border-right: 1px solid var(--red);
+.language-block-text {
+  font-size: 20px;
+  margin: auto 0;
+  padding-left: 4px;
+  font-weight: bold;
+  color: var(--black);
 }
 
 .interests-header {
@@ -511,7 +469,8 @@ a:hover {
 }
 
 .interest-name {
-  margin: 4px 0;
+  font-size: 20px;
+  margin: auto 0;
   font-weight: bold;
 }
 
