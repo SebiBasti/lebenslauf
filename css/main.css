@@ -155,11 +155,11 @@ a:hover {
 }
 
 .box-5 {
-  height: 68px;
+  height: 42px;
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 54px;
+  top: 21px;
 }
 
 .box-6 {
@@ -167,7 +167,7 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 257px;
+  top: 244px;
 }
 
 .box-7 {
@@ -175,7 +175,15 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 390px;
+  top: 446px;
+}
+
+.box-8 {
+  height: 68px;
+  width: 80%;
+  background-color: var(--red);
+  position: absolute;
+  top: 580px;
 }
 
 .dinA4 {
@@ -393,6 +401,10 @@ a:hover {
   color: var(--grey);
   right: 0px;
   bottom: -50px;
+}
+
+.app-jamable {
+  margin-bottom: 32px;
 }
 
 .education {
