@@ -135,7 +135,7 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 489px;
+  top: 553px;
 }
 
 .box-3 {
@@ -143,7 +143,7 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 673px;
+  top: 782px;
 }
 
 .box-4 {
@@ -151,7 +151,7 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 830px;
+  top: 927px;
 }
 
 .box-5 {
@@ -159,7 +159,7 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 21px;
+  top: 42px;
 }
 
 .box-6 {
@@ -167,7 +167,7 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 244px;
+  top: 256px;
 }
 
 .box-7 {
@@ -175,7 +175,7 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 446px;
+  top: 426px;
 }
 
 .box-8 {
@@ -183,7 +183,7 @@ a:hover {
   width: 80%;
   background-color: var(--red);
   position: absolute;
-  top: 580px;
+  top: 560px;
 }
 
 .dinA4 {
@@ -350,7 +350,7 @@ a:hover {
 .professional-experience-header-small-bold {
   font-weight: bold;
   color: var(--black);
-  margin: 16px 0 0 0;
+  margin: 12px 0 0 0;
   height: 26px;
 }
 
@@ -380,7 +380,6 @@ a:hover {
   padding-left: 14px;
   color: var(--red);
   list-style: none;
-  height: 67px;
 }
 
 .professional-experience-list-line::before {
@@ -394,6 +393,28 @@ a:hover {
 .professional-experience-list-line {
   color: var(--black);
   font-weight: 600;
+  font-size: 14px;
+}
+
+.le-wagon-ta {
+  height: 218px;
+}
+
+.website-personal {
+  height: 133px;
+}
+
+.website-wandgestaltung-reinl {
+  height: 133px;
+}
+
+.app-jamable {
+  margin-bottom: 32px;
+  height: 133px;
+}
+
+.le-wagon {
+  height: 155px;
 }
 
 .page-number {
@@ -401,10 +422,6 @@ a:hover {
   color: var(--grey);
   right: 0px;
   bottom: -50px;
-}
-
-.app-jamable {
-  margin-bottom: 32px;
 }
 
 .education {
@@ -451,10 +468,6 @@ a:hover {
   list-style: none;
 }
 
-.list-le-wagon {
-  height: 90px;
-}
-
 .list-university {
   height: 22px;
 }
@@ -470,6 +483,7 @@ a:hover {
 .education-list-line {
   color: var(--black);
   font-weight: 600;
+  font-size: 14px;
 }
 
 .english-certificate {
